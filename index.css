@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+input[type="text"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+
+
+
+body{
+    background: #E9EBEE;
+    color: #252525;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300px;
+}
+
+.wrapper {
+    width: 1240px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px 50px;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+
+
+.header{
+    position: relative;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333F48;
+    text-decoration: none;
+}
+
+.header ul.nav{
+    float: right;
+    list-style: none;
+    margin-right: 50px
+}
+.header ul.nav a{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 250ms ease;
+    text-decoration: none;
+    color: black;
+}
+
+.header ul.nav a:hover{
+    opacity: 0.5;
+    color: #555555;
+}
+
+
+
+.header ul.phone{
+    float: right;
+    list-style: none;
+}
+.header ul.phone li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 250ms ease;
+}
+.header ul.phone li a{
+    text-decoration: none;
+    color: black;
+}
+.header ul.phone li:hover{
+    opacity: 0.5;
+    color: #555555;
+}
+
+
+
+
+
+
+.presentation{
+    margin: 50px 0;
+    background-image: url("img/1.jpg") ;
+    border-radius: 20px;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #25252544;
+    position: relative;
+
+}
+.presentation::after{
+    content: 'Пластиковые двери и окна';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 500px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.presentation::before{
+    content: 'Поможем подобрать, изготовим и установим межкомнатные и входные двери, а также окна и подоконники.';
+    position: absolute;
+    top: 155px;
+    left: 50px;
+    width: 500px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.button-img{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 300px;
+    left: 100px;
+    cursor: pointer;
+    color: #252525;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3D47F;
+    border-radius: 45px;
+    transition: transform 500ms ease;
+
+}
+.presentation a:hover{
+    transform: scale(1.03);
+}
+
+
+
+
+
+
+.stages-block{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 100%;
+    margin: 50px auto;
+}
+.stages-block .stages-title h1{
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+}
+.stages-block .stages-title h2{
+    margin-top: 10px;
+    font-size: 23px;
+    line-height: 1.37;
+    font-weight: 400;
+    text-align: center;
+}
+.stages-lists-block{
+    display: flex;
+    justify-content: center;
+
+}
+.stages-lists-block .stages-list{
+    width: 300px;
+    margin: 50px;
+}
+.stages-list h1{
+    width: 35px;
+    height: 35px;
+    background-color: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    position: absolute;
+    margin-left: -50px;
+}
+.stages-lists-block .stages-list p{
+    color: #000000;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+}
+.stages-lists-block .stages-list b{
+    color: #242424;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+.free-block-measuring{
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 0px 0px 50px 10px rgba(34, 60, 80, 0.23);
+    box-shadow: 0px 0px 50px 10px rgba(34, 60, 80, 0.23);
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    margin: 50px auto;
+    width: 1100px;
+    border-radius: 10px;
+}
+.free-block-measuring .free-block-title h1{
+    position: relative;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #333F48;
+}
+
+.free-block-measuring .free-block-title h2{
+    color: #333F48;
+    position: relative;
+    font-size: 16px;
+    padding-left: 0px;
+}
+
+.free-block-div{
+    padding-top: 20px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-content: center;
+    justify-content: start;
+    justify-items: start;
+}
+
+.container-free-block{
+    display: block;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    width: 200px;   
+}
+
+.container-free-block h1{
+    font-size: 17px;
+    width: 150px;
+    text-align: left;
+}
+
+.container-free-block input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.250);
+    transition: transform 150ms ease, border-radius 500ms;
+}
+
+.container-free-block:hover input ~ .checkmark{
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+.container-free-block input:checked ~ .checkmark{
+    background-color: #ffae008e;
+    border-radius: 50%;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-free-block input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.container-free-block .checkmark:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.free-block-input{
+    position: relative;;
+    margin-top: 30px;
+    padding: 14px 24px;
+    border-radius: 32px;
+    font-size: 18px;
+    width: 200px;
+    border: 1px solid #eee;
+    resize: none;
+    outline: 0;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.free-block-button{
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 35px;
+    cursor: pointer;
+    color: #252525;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3D47F;
+    border-radius: 45px;
+}
+
+.free-block-button:hover{
+    opacity: 0.9;
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+
+
+
+
+.block1{
+    margin: 70px auto;
+}
+.item1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: stretch;
+}
+.item1 div{
+    width: 20%;
+    height: 400px;
+    margin-bottom: 50px;
+    margin: 10px 35px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.item1 div a{
+    text-decoration: none;
+}
+.item1 div h2{
+    font-size: 20px;
+    margin: 0px 0px;
+    width: auto;
+    color: #0099f7;
+    cursor: pointer;
+}
+.item1 div b{
+    margin: 10px 0px;
+    color: #000000;
+    width: 300px;
+    cursor: pointer;
+    
+}
+.item1 div p{
+    margin: 0px 0px;
+    color: #757575;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+
+.item1 img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+}
+
+.item1 img:hover{
+    transform: scale(1.05);
+}
+
+
+.item1 .catalog-button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #F3D47F;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 500ms ease;
+    text-decoration: none;
+    color: #000000;
+}
+
+.item1 .catalog-button:hover{
+    transform: scale(1.05);
+}
+
+.item1 .catalog-button::after{
+    content: 'Перейти';
+}
+
+
+
+
+
+
+.window-product-title{
+    margin: 10px 10px;
+}
+.window-product-title h1{
+    margin: 25px 0 auto auto;
+    color: #333F48;
+    font-size: 35px;
+
+}
+
+.window-product-title h2{
+    margin: 25px auto;
+    color: #333F48;
+    font-size: 20px;
+    width: 700px;
+    float: left;
+    font-weight: 400;
+}
+
+
+.window-product-title a{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 25px;
+    cursor: pointer;
+    color: #252525;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3D47F;
+    border-radius: 45px;
+    float: left;
+    transition: transform 500ms ease;
+
+}
+.window-product-title a:hover{
+transform: scale(1.03);
+}
+
+.block2{
+    margin: 150px 50px 0 0; 
+    height: 100%;
+}
+.item2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 35px;
+}
+.item2 div{
+    width: 20%;
+    height: 400px;
+    margin-bottom: 50px;
+    margin: 10px 35px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    position: relative;
+    border: 0.1mm solid rgba(54, 54, 54, 0.116);
+    transition: transform 500ms ease, box-shadow 500ms ease ;
+}
+.item2 div:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.1);
+}
+
+.item2 div a{
+    text-decoration: none;
+}
+.item2 div h2{
+    font-size: 20px;
+    margin: 0px 10px;
+    width: auto;
+    color: #0099f7;
+    cursor: pointer;
+}
+.item2 div b{
+    margin: 10px 10px;
+    color: #000000;
+    width: 300px;
+    cursor: pointer;
+    
+}
+.item2 div p{
+    margin: 0px 10px;
+    color: #757575;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+
+.item2 img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+}
+
+.item2 img:hover{
+    transform: scale(1.05);
+}
+
+
+.item2 .catalog-button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 500ms ease, background 500ms, border 500ms, color 500ms;
+    text-decoration: none;
+    color: #ff3d23;
+    border: 0.1mm solid rgba(54, 54, 54, 0.116);
+}
+
+.item2 .catalog-button:hover{
+    transform: scale(1.05);
+    background: #ff3d23;
+    border: none;
+    color: #ffffff;
+
+}
+
+.item2 .catalog-button::after{
+    content: 'Перейти';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-company {
+    position: relative;
+    margin: 0px auto;
+    height: 500px;
+    display: flex;
+    padding-left: 0px;
+}
+
+.about-company-text h1{
+    padding-left: 100px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    width: 650px;
+    color: #333F48; 
+}
+.about-company-text h2{
+    padding-left: 50px;
+    width: 600px;
+    font-size: 20px;
+    color: #333F48;
+}
+
+
+.about-company #about-img-1{
+    padding-top: 50px;
+    width: 500px;
+    height: auto;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    margin-top: 1000px;
+}
